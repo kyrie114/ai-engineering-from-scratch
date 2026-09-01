@@ -84,3 +84,6 @@ i18n/*/phases/
 i18n/*/.cache/
 i18n/*/.translate-cache.json
 site/langs.js
+
+# Obsidian editor config (local only)
+.obsidian/
