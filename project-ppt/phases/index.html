@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPT 索引 · AI Engineering from Scratch</title>
+<style>
+  :root{--paper:#fafaf8;--ink:#0a0a0a;--grey-1:#f0f0ee;--grey-3:#737373;--accent:#002FA7;--border:#e0e0e0;
+    --sans:"Inter","Helvetica Neue","Segoe UI",system-ui,sans-serif;
+    --sans-zh:"PingFang SC","Microsoft YaHei UI","Noto Sans SC",sans-serif;
+    --mono:"JetBrains Mono","Cascadia Code",Consolas,monospace}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans),var(--sans-zh);padding:6vh 6vw;max-width:1280px;margin:0 auto}
+  .kicker{font-family:var(--mono);font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:var(--grey-3)}
+  h1{font-weight:200;font-size:min(5.2vw,52px);letter-spacing:-.03em;line-height:1.04;margin:1.6vh 0 1vh}
+  .lead{font-size:17px;line-height:1.6;color:#525252;max-width:64ch;margin-bottom:4vh}
+  .meta-row{display:flex;gap:2em;flex-wrap:wrap;font-family:var(--mono);font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey-3);margin-bottom:4.5vh;padding-bottom:2vh;border-bottom:1px solid var(--border)}
+  a{color:inherit;text-decoration:none}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4vh 2vw}
+  .card{display:grid;grid-template-columns:auto 1fr auto;gap:1.4vw;align-items:center;border-top:1px solid var(--border);padding:1.8vh .4vw;transition:background .15s}
+  .card:hover{background:var(--grey-1)}
+  .num{font-weight:200;font-size:34px;letter-spacing:-.02em;color:var(--accent);font-variant-numeric:tabular-nums;min-width:56px}
+  .t{font-weight:500;font-size:17px;letter-spacing:-.01em}
+  .d{font-size:14px;color:var(--grey-3);margin-top:3px;font-family:var(--mono);letter-spacing:.06em}
+  .arrow{font-family:var(--mono);font-size:14px;color:var(--grey-3)}
+  .top{border:1px solid var(--accent);padding:1.2vh 1vw;margin-bottom:4vh;display:flex;justify-content:space-between;gap:2vw;align-items:center}
+  .top strong{font-size:16px;font-weight:600}
+  .top span{font-family:var(--mono);font-size:13px;color:var(--grey-3);letter-spacing:.08em}
+  @media(max-width:860px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="kicker">FIELD NOTES · 21 DECKS · SWISS IKB</div>
+<h1>AI Engineering from Scratch<br/>全景 PPT 索引</h1>
+<p class="lead">1 份总览 + 20 份阶段导读,全部为横向翻页网页 deck:双击打开,← → 翻页,ESC 总览,P 演讲者模式(含讲稿备注与计时)。所有课名、课时、测验与工件数字均来自仓库实测。</p>
+<div class="meta-row"><span>REPO · rohitg00/ai-engineering-from-scratch</span><span>MIT · 2026.08.30</span><span>511 LESSONS · 20 PHASES</span></div>
+<a class="top" href="../index.html"><strong>00 · 项目总览 Field Note(16 页)</strong><span>THE WHOLE CURRICULUM IN 16 PAGES →</span></a>
+<div class="grid">
+  <a class="card" href="00-setup-and-tooling/index.html"><span class="num">P00</span><span><span class="t">环境与工具 · Setup &amp; Tooling</span><br/><span class="d">12 LESSONS · 8H · QUIZ 60</span></span><span class="arrow">→</span></a>
+  <a class="card" href="01-math-foundations/index.html"><span class="num">P01</span><span><span class="t">数学地基 · Math Foundations</span><br/><span class="d">22 LESSONS · 32H · QUIZ 110</span></span><span class="arrow">→</span></a>
+  <a class="card" href="02-ml-fundamentals/index.html"><span class="num">P02</span><span><span class="t">机器学习基础 · ML Fundamentals</span><br/><span class="d">18 LESSONS · 26H · QUIZ 90</span></span><span class="arrow">→</span></a>
+  <a class="card" href="03-deep-learning-core/index.html"><span class="num">P03</span><span><span class="t">深度学习核心 · Deep Learning Core</span><br/><span class="d">13 LESSONS · 19H · QUIZ 65</span></span><span class="arrow">→</span></a>
+  <a class="card" href="04-computer-vision/index.html"><span class="num">P04</span><span><span class="t">计算机视觉 · Computer Vision</span><br/><span class="d">28 LESSONS · 31H · QUIZ 140</span></span><span class="arrow">→</span></a>
+  <a class="card" href="05-nlp-foundations-to-advanced/index.html"><span class="num">P05</span><span><span class="t">自然语言处理 · NLP</span><br/><span class="d">29 LESSONS · 31H · QUIZ 232</span></span><span class="arrow">→</span></a>
+  <a class="card" href="06-speech-and-audio/index.html"><span class="num">P06</span><span><span class="t">语音与音频 · Speech &amp; Audio</span><br/><span class="d">17 LESSONS · 19H · QUIZ —</span></span><span class="arrow">→</span></a>
+  <a class="card" href="07-transformers-deep-dive/index.html"><span class="num">P07</span><span><span class="t">Transformer 深潜 · Transformers Deep Dive</span><br/><span class="d">16 LESSONS · 17H · QUIZ 5</span></span><span class="arrow">→</span></a>
+  <a class="card" href="08-generative-ai/index.html"><span class="num">P08</span><span><span class="t">生成式 AI · Generative AI</span><br/><span class="d">15 LESSONS · 16H · QUIZ —</span></span><span class="arrow">→</span></a>
+  <a class="card" href="09-reinforcement-learning/index.html"><span class="num">P09</span><span><span class="t">强化学习 · Reinforcement Learning</span><br/><span class="d">12 LESSONS · 14H · QUIZ —</span></span><span class="arrow">→</span></a>
+  <a class="card" href="10-llms-from-scratch/index.html"><span class="num">P10</span><span><span class="t">从零造 LLM · LLMs from Scratch</span><br/><span class="d">24 LESSONS · 33H · QUIZ 55</span></span><span class="arrow">→</span></a>
+  <a class="card" href="11-llm-engineering/index.html"><span class="num">P11</span><span><span class="t">LLM 工程 · LLM Engineering</span><br/><span class="d">17 LESSONS · 21H · QUIZ 86</span></span><span class="arrow">→</span></a>
+  <a class="card" href="12-multimodal-ai/index.html"><span class="num">P12</span><span><span class="t">多模态 AI · Multimodal AI</span><br/><span class="d">25 LESSONS · 67H · QUIZ —</span></span><span class="arrow">→</span></a>
+  <a class="card" href="13-tools-and-protocols/index.html"><span class="num">P13</span><span><span class="t">工具与协议 · Tools &amp; Protocols</span><br/><span class="d">31 LESSONS · 43H · QUIZ 138</span></span><span class="arrow">→</span></a>
+  <a class="card" href="14-agent-engineering/index.html"><span class="num">P14</span><span><span class="t">Agent 工程 · Agent Engineering</span><br/><span class="d">42 LESSONS · 43H · QUIZ 294</span></span><span class="arrow">→</span></a>
+  <a class="card" href="15-autonomous-systems/index.html"><span class="num">P15</span><span><span class="t">自主系统 · Autonomous Systems</span><br/><span class="d">22 LESSONS · 20H · QUIZ —</span></span><span class="arrow">→</span></a>
+  <a class="card" href="16-multi-agent-and-swarms/index.html"><span class="num">P16</span><span><span class="t">多智能体与集群 · Multi-Agent &amp; Swarms</span><br/><span class="d">25 LESSONS · 31H · QUIZ 10</span></span><span class="arrow">→</span></a>
+  <a class="card" href="17-infrastructure-and-production/index.html"><span class="num">P17</span><span><span class="t">基建与生产 · Infrastructure &amp; Production</span><br/><span class="d">28 LESSONS · 29H · QUIZ 169</span></span><span class="arrow">→</span></a>
+  <a class="card" href="18-ethics-safety-alignment/index.html"><span class="num">P18</span><span><span class="t">伦理安全与对齐 · Ethics, Safety &amp; Alignment</span><br/><span class="d">30 LESSONS · 31H · QUIZ 180</span></span><span class="arrow">→</span></a>
+  <a class="card" href="19-capstone-projects/index.html"><span class="num">P19</span><span><span class="t">毕业项目 · Capstone Projects</span><br/><span class="d">85 LESSONS · ~600H · QUIZ 530</span></span><span class="arrow">→</span></a>
+</div>
+</body>
+</html>
