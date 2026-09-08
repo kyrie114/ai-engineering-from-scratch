@@ -141,17 +141,34 @@ def compress_dome():
         print(f"compressed shape: {compress_image.shape}")
 
 
+def denoise_image_svd(noisy_image, k):
+    np.random.seed(42)
+    # SVD实现噪声去除 outer 向量外积
+    clean = np.outer(np.sin(np.linspace(0, 4*np.pi, 100)),#等差数列生成器
+                    np.cos(np.linspace(0, 2*np.pi, 80)))
+    noise = clean + 0.5 * np.random.randn(100, 80)
+    noisy = clean + noise
 
-np.random.seed(42)
-# SVD实现噪声去除
-clean = np.outer(np.sin(np.linspace(0, 4*np.pi, 100)),
-                np.cos(np.linspace(0, 2*np.pi, 80)))
-noise = clean + 0.5 * np.random.randn(100, 80)
-noisy = clean + noise
+    U, S, Vt = np.linalg.svd(noisy, full_matrices=False)
+    denoised = U[:, :5] @ np.diag(S[:5]) @ Vt[:5, :]
 
-U, S, Vt = np.linalg.svd(noisy, full_matrices=False)
-denoised = U[:, :5] @ np.diag(S[:5]) @ Vt[:5, :]
+    print(f"Noisy error:    {np.linalg.norm(noisy - clean):.4f}")
+    print(f"Denoised error: {np.linalg.norm(denoised - clean):.4f}")
+    print(f"Improvement:    {(1 - np.linalg.norm(denoised - clean) / np.linalg.norm(noisy - clean)):.1%}")
 
-print(f"Noisy error:    {np.linalg.norm(noisy - clean):.4f}")
-print(f"Denoised error: {np.linalg.norm(denoised - clean):.4f}")
-print(f"Improvement:    {(1 - np.linalg.norm(denoised - clean) / np.linalg.norm(noisy - clean)):.1%}")
+def pseudoinverse_example():
+    # 伪逆
+    A = np.array([[1, 1], [2, 1], [3, 1]], dtype=float)
+    b = np.array([3, 5, 6], dtype=float)
+
+    U, S, Vt = np.linalg.svd(A, full_matrices=False)
+    S_inv = np.diag(1.0 / S)
+    A_pinv = Vt.T @ S_inv @ U.T
+
+    x_svd = A_pinv @ b
+    x_lstsq = np.linalg.lstsq(A, b, rcond=None)[0]
+    x_pinv = np.linalg.pinv(A) @ b
+
+    print(f"SVD pseudoinverse solution:  {x_svd}")
+    print(f"np.linalg.lstsq solution:   {x_lstsq}")
+    print(f"np.linalg.pinv solution:    {x_pinv}")
