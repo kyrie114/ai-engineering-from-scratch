@@ -42,7 +42,8 @@ Phase 0 跳过理由:学习者的 Python/numpy 环境已在正常运行,课程�
 |------|--------|------|------|
 | ≤2026-08-29 | phase01/01–08 | — | 建档前已完成,补记;当时分数未留档 |
 | 2026-08-30 | phase01/09-information-theory | 3/3 | KL≈CE 通过;PPL、MI 当场重讲后过关;MI-vs-Pearson 仍是重复薄弱点 |
+| 2026-09-05 | phase01/11-singular-value-decomposition | 3/3 | 完整覆盖:概念(rotate-scale-rotate) + power iteration 从零实现 + 官方 demo 验证 + 3 道 post 全对 |
 | 2026-09-02 | phase01/10-dimensionality-reduction | 3/3 | 收官:概念+实验(有损/无损记账、kernel PCA 同心圆、elbow 侦探)+ 3 道 post 全对 |
 
 ## Review queue
-- Phase 1 L09 — MI vs Pearson 相关性的区分:2026-09-02 第三次重测,"corr=0 ⇏ 独立"结论已答对,但反例(Y = X²)仍需提示才想起。下次热身若能独立说出反例即销账;否则现场跑 5 分钟实验(corr vs MI on Y=X²)。L09 本身 quiz 3/3,无需整课重学。
+- (空,MI vs Pearson 反例账已在 L11 热身独立销账)
