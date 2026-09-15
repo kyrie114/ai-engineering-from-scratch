@@ -44,6 +44,11 @@ Phase 0 跳过理由:学习者的 Python/numpy 环境已在正常运行,课程�
 | 2026-08-30 | phase01/09-information-theory | 3/3 | KL≈CE 通过;PPL、MI 当场重讲后过关;MI-vs-Pearson 仍是重复薄弱点 |
 | 2026-09-05 | phase01/11-singular-value-decomposition | 3/3 | 完整覆盖:概念(rotate-scale-rotate) + power iteration 从零实现 + 官方 demo 验证 + 3 道 post 全对 |
 | 2026-09-02 | phase01/10-dimensionality-reduction | 3/3 | 收官:概念+实验(有损/无损记账、kernel PCA 同心圆、elbow 侦探)+ 3 道 post 全对 |
+| 2026-09-10 | phase01/12-tensor-operations | 3/3 | broadcast 初期卡住("一点都不会"),讲解后通过;transpose/reshape 内存顺序理解正确 |
+| 2026-09-14 | phase01/13-numerical-stability | 2/3 | 稳定 softmax 的减 max 误当成零均值; catastrophic cancellation / bfloat16 清楚 |
+| 2026-09-14 | phase01/14-norms-and-distances | 1/3 | 课中余弦/LASSO 直觉对; post 误选 Wasserstein「总更小」、马氏当成比字符串 |
+| 2026-09-14 | phase01/14-norms-and-distances (重修) | — | 慢讲后收束全对: 余弦vsL2、马氏=协方差、W vs KL=不重叠仍有梯度; 承认上次刷题式教学无效 |
+| 2026-09-14 | phase01/15-statistics-for-ml | 2/3 | p值/Pearson·Spearman/bootstrap 先「不知道」后讲透; 多样本假阳性误当成仍是5%; 显著≠实用、bootstrap优势清楚 |
 
 ## Review queue
-- (空,MI vs Pearson 反例账已在 L11 热身独立销账)
+- (空; L14 马氏/Wasserstein 已在重修销账)
