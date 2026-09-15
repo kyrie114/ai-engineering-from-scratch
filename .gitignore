@@ -87,3 +87,9 @@ site/langs.js
 
 # Obsidian editor config (local only)
 .obsidian/
+
+# Local practice files and one-off dumps
+scratch/*
+!scratch/README.md
+_tmp_*.txt
+scripts/_tmp_*.py
